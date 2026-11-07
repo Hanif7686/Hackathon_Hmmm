@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nama Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="atas">
+        <div class="wadah">
+            <!-- TODO: ganti dengan nama produk/layanan yang dipromosikan -->
+            <a href="#" class="merek">Nama Produk</a>
+            <nav>
+                <a href="#fitur">Fitur</a>
+                <a href="#faq">FAQ</a>
+                <a href="#daftar" class="tombol kecil">Daftar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wadah">
+                <h1>Satu kalimat janji utama produk</h1>
+                <p>Penjelasan singkat: untuk siapa produk ini dan masalah apa yang diselesaikan.</p>
+                <a href="#daftar" class="tombol">Coba Sekarang</a>
+            </div>
+        </section>
+
+        <section id="fitur" class="wadah">
+            <h2>Fitur</h2>
+            <!-- Kartu fitur diisi oleh script.js -->
+            <div id="daftar-fitur" class="grid"></div>
+        </section>
+
+        <section id="faq" class="wadah">
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+            <details>
+                <summary>Pertanyaan pertama?</summary>
+                <p>Jawaban pertanyaan pertama.</p>
+            </details>
+            <details>
+                <summary>Pertanyaan kedua?</summary>
+                <p>Jawaban pertanyaan kedua.</p>
+            </details>
+        </section>
+
+        <section id="daftar" class="wadah">
+            <h2>Daftar</h2>
+            <form id="form-daftar" class="kartu form" novalidate>
+                <label>Nama <input name="nama" required></label>
+                <label>Email <input name="email" type="email" required></label>
+                <p id="pesan" class="pesan" hidden></p>
+                <button>Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bawah">
+        <div class="wadah">Mini Hackathon Teknologi Web · Nama Kelompok</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
