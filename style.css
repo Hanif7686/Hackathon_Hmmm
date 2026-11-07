@@ -29,7 +29,19 @@ body {
 .atas nav a.tombol { color: #fff; }
 
 /* Hero */
+<<<<<<< HEAD
 .hero { background: var(--utama); color: #fff; padding: 64px 0; text-align: center; margin-bottom: 48px; }
+=======
+.hero {
+    background:
+        linear-gradient(rgba(35, 32, 120, .48), rgba(35, 32, 120, .48)),
+        url("Bromo.jpeg") center / cover no-repeat;
+    color: #fff;
+    padding: 64px 0;
+    text-align: center;
+    margin-bottom: 48px;
+}
+>>>>>>> origin/Somenew
 .hero h1 { font-size: 40px; margin: 0 0 12px; }
 .hero p { margin: 0 auto 24px; max-width: 560px; opacity: .9; }
 .hero .tombol { background: #fff; color: var(--utama); }
