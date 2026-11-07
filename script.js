@@ -24,11 +24,12 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const nama = form.nama.value.trim();
     const email = form.email.value.trim();
+    const password = form.password.value;
 
     pesan.hidden = false;
     // checkValidity() memeriksa atribut required dan type="email" di HTML
-    if (nama === '' || !form.email.checkValidity()) {
-        pesan.textContent = 'Isi nama dan email yang benar.';
+    if (nama === '' || !form.email.checkValidity() || password === '') {
+        pesan.textContent = 'Isi nama, email, dan password yang benar.';
         pesan.className = 'pesan gagal';
         return;
     }
