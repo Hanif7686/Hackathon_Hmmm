@@ -9,7 +9,6 @@
   <body>
     <header class="atas">
       <div class="wadah">
-        <!-- TODO: ganti dengan nama produk/layanan yang dipromosikan -->
         <a href="#" class="merek">Bromo Trip</a>
         <nav>
           <a href="#fitur">Fitur</a>
@@ -21,13 +20,24 @@
 
     <main>
       <section class="hero">
-        <div class="wadah">
-          <h1>Satu kalimat janji utama produk</h1>
-          <p>
-            Penjelasan singkat: untuk siapa produk ini dan masalah apa yang
-            diselesaikan.
-          </p>
-          <a href="#daftar" class="tombol">Coba Sekarang</a>
+        <div class="wadah hero-layout">
+          <div class="hero-copy">
+            <h1>Satu kalimat janji utama produk</h1>
+            <p>
+              Penjelasan singkat: untuk siapa produk ini dan masalah apa yang
+              diselesaikan.
+            </p>
+            <a href="#daftar" class="tombol">Coba Sekarang</a>
+          </div>
+          <div id="daftar" class="hero-daftar">
+            <h2>Daftar</h2>
+            <form id="form-daftar" class="kartu form" novalidate>
+              <label>Nama <input name="nama" required /></label>
+              <label>Email <input name="email" type="email" required /></label>
+              <p id="pesan" class="pesan" hidden></p>
+              <button>Kirim</button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -48,20 +58,10 @@
           <p>Jawaban pertanyaan kedua.</p>
         </details>
       </section>
-
-      <section id="daftar" class="wadah">
-        <h2>Daftar</h2>
-        <form id="form-daftar" class="kartu form" novalidate>
-          <label>Nama <input name="nama" required /></label>
-          <label>Email <input name="email" type="email" required /></label>
-          <p id="pesan" class="pesan" hidden></p>
-          <button>Kirim</button>
-        </form>
-      </section>
     </main>
 
     <footer class="bawah">
-      <div class="wadah">Mini Hackathon Teknologi Web · Nama Kelompok</div>
+      <div class="wadah">Hmmm</div>
     </footer>
 
     <script src="script.js"></script>
